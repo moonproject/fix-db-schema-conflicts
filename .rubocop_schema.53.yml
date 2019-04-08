@@ -1,38 +1,35 @@
-# Configuration for Rubocop >= 0.53.0
-
+Metrics/LineLength:
+  Max: 126 # Github fixed web line length
+Metrics/ClassLength:
+  Max: 500
+Metrics/ModuleLength:
+  Max: 250
+Metrics/AbcSize:
+  Max: 50
+Metrics/CyclomaticComplexity:
+  Max: 25
+Metrics/MethodLength:
+  Max: 25
+Metrics/PerceivedComplexity:
+  Max: 12
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
 Layout/AlignHash:
-  EnforcedColonStyle: 'key'
-  EnforcedHashRocketStyle: 'key'
-
-Layout/ExtraSpacing:
-  # When true, allows most uses of extra spacing if the intent is to align
-  # things with the previous or next line, not counting empty lines or comment
-  # lines.
-  AllowForAlignment: false
-
-Layout/SpaceBeforeFirstArg:
-  Enabled: true
-
-Style/NumericLiterals:
+  EnforcedColonStyle: table
+require: rubocop-performance
+Style/AsciiComments:
   Enabled: false
-
-Metrics/BlockNesting:
-  Max: 2
-
-Style/WordArray:
+Style/ClassAndModuleChildren:
   Enabled: false
-
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: 'comma'
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: 'comma'
-
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: 'comma'
-
-Style/HashSyntax:
-  EnforcedStyle: 'ruby19'
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false # Default in ruby 3, so don't need to worry about, except we go some memory leaks
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Style/PercentLiteralDelimiters:
+  Enabled: false # Cause of a bug in codeclimate
+Style/RegexpLiteral:
+  Enabled: false

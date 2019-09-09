@@ -32,4 +32,4 @@ Style/HashSyntax:
   EnforcedStyle: 'ruby19'
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes

@@ -26,7 +26,7 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false # Default in ruby 3, so don't need to worry about, except we go some memory leaks
 Layout/IndentationConsistency:
-  EnforcedStyle: indented_internal_methods
+  EnforcedStyle: normal
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Style/PercentLiteralDelimiters:

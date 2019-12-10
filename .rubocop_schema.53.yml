@@ -12,9 +12,9 @@ Metrics/MethodLength:
   Max: 25
 Metrics/PerceivedComplexity:
   Max: 12
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedColonStyle: table
 require: rubocop-performance
 Style/AsciiComments:

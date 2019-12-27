@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'delegate'
 
 module FixDBSchemaConflicts
@@ -42,4 +44,4 @@ module FixDBSchemaConflicts
   end
 end
 
-ActiveRecord::SchemaDumper.send(:prepend, FixDBSchemaConflicts::SchemaDumper)
+ActiveRecord::SchemaDumper.prepend FixDBSchemaConflicts::SchemaDumper

@@ -1,4 +1,4 @@
-Metrics/LineLength:
+Layout/LineLength:
   Max: 126 # Github fixed web line length
 Metrics/ClassLength:
   Max: 500

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FixDBSchemaConflicts
   class AutocorrectConfiguration
     def self.load

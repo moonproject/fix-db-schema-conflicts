@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 require 'fix_db_schema_conflicts/autocorrect_configuration'
 

@@ -1,5 +1,10 @@
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/HashAlignment:
+  EnforcedColonStyle: table
 Layout/LineLength:
   Max: 126 # Github fixed web line length
+  AutoCorrect: false # Break eggs
 Metrics/ClassLength:
   Max: 500
 Metrics/ModuleLength:
@@ -12,11 +17,8 @@ Metrics/MethodLength:
   Max: 25
 Metrics/PerceivedComplexity:
   Max: 12
-Layout/ParameterAlignment:
-  EnforcedStyle: with_fixed_indentation
-Layout/HashAlignment:
-  EnforcedColonStyle: table
-require: rubocop-performance
+Naming/RescuedExceptionsVariableName:
+  Enabled: false # Rubocop contradicts himself
 Style/AsciiComments:
   Enabled: false
 Style/ClassAndModuleChildren:
@@ -26,10 +28,12 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false # Default in ruby 3, so don't need to worry about, except we go some memory leaks
 Layout/IndentationConsistency:
-  EnforcedStyle: normal
+  EnforcedStyle: indented_internal_methods
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 Style/PercentLiteralDelimiters:
   Enabled: false # Cause of a bug in codeclimate
 Style/RegexpLiteral:
+  Enabled: false
+Style/NestedTernaryOperator:
   Enabled: false
